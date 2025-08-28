@@ -4,6 +4,12 @@ FROM python:3.12-slim AS builder
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+# 1. Declara el argumento para que Docker lo reconozca
+ARG SECRET_KEY
+
+# 2. Asigna el valor del argumento a una variable de entorno
+ENV SECRET_KEY=$SECRET_KEY
+
 # Establece el directorio de trabajo
 WORKDIR /app
 
