@@ -49,7 +49,7 @@ COPY --from=builder /app/wheels /wheels
 RUN pip install --no-cache /wheels/*
 
 # Copia el código de la aplicación y el entrypoint
-COPY . .
+COPY . /web2_conexa
 # COPY --chown=appuser:appuser
 # entrypoint.sh .
 # RUN chmod +x entrypoint.sh
