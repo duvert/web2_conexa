@@ -9,6 +9,10 @@ ARG SECRET_KEY
 
 # 2. Asigna el valor del argumento a una variable de entorno
 ENV SECRET_KEY=$SECRET_KEY
+ENV DB_ENGINE=$DB_ENGINE
+ENV DB_NAME=$DB_NAME
+ENV DB_USER=$DB_USER
+ENV DB_PASSWORD=$DB_PASSWORD
 
 # Establece el directorio de trabajo
 WORKDIR /app
