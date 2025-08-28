@@ -49,6 +49,12 @@ COPY . .
 RUN chown -R appuser:appuser /home/appuser/app
 USER appuser
 
+# 1. Declara el argumento para que Docker lo reconozca
+ARG SECRET_KEY
+
+# 2. Asigna el valor del argumento a una variable de entorno
+ENV SECRET_KEY=$SECRET_KEY
+
 # Recolección de archivos estáticos
 RUN python manage.py collectstatic --noinput
 
