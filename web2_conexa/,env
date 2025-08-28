@@ -1,6 +1,6 @@
 # .env
 DB_ENGINE='django.db.backends.postgresql_psycopg2'
-DB_NAME='core-conexa-dev'
-DB_USER='duvert'
-DB_PASSWORD='slackware'
+DB_NAME='web-conexa_my-app'
+DB_USER='postgres'
+DB_PASSWORD='OZk^G*jRZjE8JD2sAr$p'
 SECRET_KEY='fd&a%**+le-74cq&mrlh^a0yp95!n5vf-q5u3+5f*9=6at1c2^'
