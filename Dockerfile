@@ -39,6 +39,8 @@ RUN apt-get update && \
 COPY --from=builder /app/wheels /wheels
 RUN pip install --no-cache /wheels/*
 
+RUN pip install --upgrade pip
+
 # Copia el código de la aplicación y el entrypoint
 COPY . .
 # COPY --chown=appuser:appuser
